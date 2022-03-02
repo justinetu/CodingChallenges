@@ -16,7 +16,7 @@ public class Challenge {
 	--> Create an empty set
 	--> Since we're given exactly 3 integers, we can store each value in an array.
 		 
-   -->	We can then loop through the array to see whether the number is in the set.
+   	--> We can then loop through the array to see whether the number is in the set.
 
 	--> In addition, we'll create a count variable that we'll initialize
 		to 1 that will acount for the number of times each number appears.
@@ -34,41 +34,37 @@ public class Challenge {
 	public static int equal(int a, int b, int c) {
 		HashSet<Integer> set = new HashSet<>();
 		int[] array = new int[3];
-    	array[0] = a;
-    	array[1] = b;
-    	array[2] = c;
-    	int count = 1;
+    		array[0] = a;
+    		array[1] = b;
+    		array[2] = c;
+    		int count = 1;
 		
-    	for(int i = 0; i < array.length; i++) {    	
-      	if(set.contains(array[i]))
-        	count++;
-      	if(!set.contains(array[i]))
-        	set.add(array[i]); 
-    	}
-      	if(count == 1)
-        	count = 0;
+    		for(int i = 0; i < array.length; i++) {    	
+      			if(set.contains(array[i]))
+        			count++;
+      			if(!set.contains(array[i]))
+        			set.add(array[i]); 
+    			}
+      			if(count == 1)
+        			count = 0;
 
-        	return count;
+        		return count;
 		}
 
 	public static void main(String[] args) {
-        int a = 1;
-        int b = 3;
-        int c = 4;
-        
-        
-  
-         System.out.println(Challenge(a, a, a));
-         set.clear();
-         System.out.println(Challenge(b, c, b));
-         set.clear();
-         System.out.println(Challenge(b, c, a));
-         
-        
-        
-    }
+        	int a = 1;
+        	int b = 3;
+        	int c = 4;
+   
+         	System.out.println(Challenge(a, a, a));
+         	set.clear();
+         	System.out.println(Challenge(b, c, b));
+         	set.clear();
+         	System.out.println(Challenge(b, c, a));
+          
+    	}
 	
-	
-	}
+
+}
 
 	
