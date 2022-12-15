@@ -8,5 +8,4 @@
 
 def area_or_perimeter(l , w):
     # return your answer
-    if l == w: return l * w
-    return 2 *(l + w)
+    return l * w if l == w else 2 * (l + w)
